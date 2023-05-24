@@ -1,0 +1,16 @@
+DO NOT RENAME ANY OF THE FILES OR IT
+WILL NOT WORK.
+
+---Facts---
+SavedResults\* - means "everything in SavedResults"
+
+When you save results to a file, the tool creates a random id for it.
+
+--Errors--
+If it cannot find the SavedResults folder,
+then double click on the Basic networking tool.cmd file and it should work.
+
+--License--
+You can distribute this software via any way.
+- You can modify this software
+- You cannot get paid for distributing this software.
