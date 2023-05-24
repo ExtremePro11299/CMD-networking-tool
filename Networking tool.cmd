@@ -1,7 +1,7 @@
 @echo off
-title Basic networking tool
+title Networking tool
 echo.
-echo Welcome to the basic networking tool.
+echo Welcome to the Batch networking tool.
 echo.
 if not exist SavedResults\ mkdir SavedResults
 :start
@@ -9,7 +9,7 @@ color 2
 echo What do you want to do? (type the number)
 echo 1) Ping (test connection)
 echo 2) Tracert (trace route)
-echo 3) Help
+echo 3) Help (open README)
 echo 4) Clear saved results
 echo 5) Exit
 echo 6) Uninstall
@@ -56,7 +56,7 @@ echo Uninstall cancelled.
 echo.
 goto start
 :help
-start Help.txt
+start README.md
 echo Opened help file.
 echo.
 goto start
