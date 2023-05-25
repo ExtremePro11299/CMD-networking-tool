@@ -9,18 +9,20 @@ color 2
 echo What do you want to do? (type the number)
 echo 1) Ping (test connection)
 echo 2) Tracert (trace route)
-echo 3) Help (open README)
-echo 4) Clear saved results
-echo 5) Exit
-echo 6) Uninstall
+echo 3) Netstat (check active connections)
+echo 4) Help (open README)
+echo 5) Clear saved results
+echo 6) Exit
+echo 7) Uninstall
 set /p input=
 echo.
 if %input%==1 goto testprep
 if %input%==2 goto tracerouteprep
-if %input%==3 goto help
-if %input%==4 goto clearsaves
-if %input%==5 exit
-if %input%==6 goto uninstall
+if %input%==3 goto nstprep
+if %input%==4 goto help
+if %input%==5 goto clearsaves
+if %input%==6 exit
+if %input%==7 goto uninstall
 :tracerouteprep
 start Resources\Traceroute.cmd
 echo Opened route tracer.
@@ -29,6 +31,23 @@ goto start
 start Resources\Pingtest.cmd
 echo Opened connection tester.
 echo.
+goto start
+:nstprep
+echo How would you like to netstat?
+echo 1) Check all connections and listening ports
+echo 2) Check Ethernet statistics
+set /p nsinput=
+if %nsinput%==1 goto nst
+if %nsinput%==2 goto nste
+:nst
+netstat -a
+echo.
+echo Netstat completed.
+goto start
+:nste
+netstat -e
+echo.
+echo Netstat completed.
 goto start
 :clearsaves
 echo This will permanently delete ALL saved results.
