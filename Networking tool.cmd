@@ -56,7 +56,7 @@ echo Uninstall cancelled.
 echo.
 goto start
 :help
-start README.md
+start README.md -n12
 echo Opened help file.
 echo.
 goto start
