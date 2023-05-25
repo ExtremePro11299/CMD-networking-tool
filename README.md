@@ -6,7 +6,7 @@ stored in the SavedResults folder, which is created on the first run.
 cmd.exe does support saving results to files as well.         
 
 --Planned updates--
-- NETSTAT command
+- More NETSTAT commands
 - IPCONFIG command
 
 ---------------Help------------------        
