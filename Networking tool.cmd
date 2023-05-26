@@ -1,5 +1,13 @@
 @echo off
 title Networking tool
+if not exist Resources\ (
+echo Could not find the Resources folder.
+echo Without it the program cannot run.
+echo Make sure the folder is named Resources and it is in the same folder as this file.
+echo If you cannot find the Resources folder, reinstall the tool from GitHub.
+pause
+exit
+)
 echo.
 echo Welcome to the Batch networking tool.
 echo.
