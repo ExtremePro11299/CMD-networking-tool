@@ -44,9 +44,13 @@ goto start
 echo How would you like to netstat?
 echo 1) Check all connections and listening ports
 echo 2) Check Ethernet statistics
+echo 3) Check the routing table
+echo 4) Check current connection offload state
 set /p nsinput=
 if %nsinput%==1 goto nst
 if %nsinput%==2 goto nste
+if %nsinput%==3 goto nstrt
+if %nsinput%==4 goto nstt
 :nst
 netstat -a
 echo.
@@ -54,6 +58,16 @@ echo Netstat completed.
 goto start
 :nste
 netstat -e
+echo.
+echo Netstat completed.
+goto start
+:nstrt
+netstat -r
+echo.
+echo Netstat completed.
+goto start
+:nstt
+netstat -t
 echo.
 echo Netstat completed.
 goto start
