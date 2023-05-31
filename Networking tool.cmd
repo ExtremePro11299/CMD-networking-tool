@@ -62,9 +62,9 @@ echo.
 echo Netstat completed.
 goto start
 :nstrt
-netstat -r
+start Resources\NetstatR.cmd
 echo.
-echo Netstat completed.
+echo Opened Netsat-R module.
 goto start
 :nstt
 netstat -t
