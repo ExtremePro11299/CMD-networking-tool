@@ -8,17 +8,33 @@ echo 2) Yes
 set /p savetype=
 goto testprep
 :testprep
-echo Please enter the IP address you would like to trace the route to.
-set /p ip=
-echo.
+echo Choose your Netstat mode.
+echo 1) Check all active connections and listening 
 goto test
-:test
-cd..
-if %savetype%==1 ping %ip% -f -l %mtu%
-if %savetype%==2 ping %ip% -f -l %mtu% >> SavedResults\TraceResult-%RANDOM%.txt
+
+:nst
+netstat -a
+echo.
+echo Netstat completed.
+goto start
+:nste
+netstat -e
+echo.
+echo Netstat completed.
+goto start
+:nstrt
+netstat -r
+echo.
+echo Netstat completed.
+goto start
+:nstt
+netstat -t
+echo.
+echo Netstat completed.
+goto start
 echo What do you want to do? (type the number)
-echo 1) Test again
-echo 2) Change saving settings
+echo 1) Netstat again
+echo 2) Change mode
 echo 3) Exit
 set /p input=
 if %input%==1 goto testprep
