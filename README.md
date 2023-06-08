@@ -5,17 +5,19 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 
---Planned updates--
-- More **NETSTAT** commands
-- **IPCONFIG** command
+The **Ipconfig** command is work in progress, so it does not work yet.
 
----------------Help------------------  
----Notes---  
+# Planned updates
+- More **NETSTAT** commands
+- Upgraded **IPCONFIG**
+
+# Help
+## Notes
 - It is recommended to switch on show file extensions.
 - DO NOT RENAME ANY OF THE FILES OR IT WILL NOT WORK.
 - When you save results to a file, the tool creates a random id for it.
   
---Errors--  
+## Errors
 
 If it cannot find the **SavedResults** folder,
 then double click on **Networking tool.cmd** and it should work.
