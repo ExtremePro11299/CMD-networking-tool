@@ -11,6 +11,7 @@ stored in the **SavedResults** folder, which is created on the first run.
 
 # Help
 ## Notes
+- DO NOT run the program as administrator. It won't be able to access the **Resources** folder if you do so.
 - It is recommended to switch on show file extensions.
 - DO NOT RENAME ANY OF THE FILES OR IT WILL NOT WORK.
 - When you save results to a file, the tool creates a random id for it.
