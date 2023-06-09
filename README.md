@@ -5,8 +5,6 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 
-The **Ipconfig** command is work in progress, so it does not work yet.
-
 # Planned updates
 - More **NETSTAT** commands
 - Upgraded **IPCONFIG**
