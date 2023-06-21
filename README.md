@@ -1,3 +1,7 @@
+---
+Supported OS: Windows NT or newer
+---
+
 All of these commands are built-in to windows
 by default. This tool arranges the networking
 batch commands into an easily accessible environment.
