@@ -13,7 +13,7 @@ echo Welcome to the Batch networking tool.
 echo.
 if not exist SavedResults\ mkdir SavedResults
 :start
-color 2
+color "%~1"
 echo What do you want to do? (type the number)
 echo 1) Ping (test connection)
 echo 2) Tracert (trace route)
