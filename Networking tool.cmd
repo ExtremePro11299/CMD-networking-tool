@@ -96,12 +96,6 @@ echo 2) No
 set /p sinput=
 if %sinput%==1 goto sdfull
 if %sinput%==2 goto sdcancel
-:sdfull
-echo Stopping tasks...
-taskkill /F /IM Resources\Pingtest.cmd
-taskkill /F /IM Resources\Traceroute.cmd
-del /F
-goto start
 :sdcancel
 echo.
 echo Uninstall cancelled.
