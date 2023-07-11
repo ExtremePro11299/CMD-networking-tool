@@ -100,6 +100,8 @@ if %sinput%==2 goto sdcancel
 echo Stopping tasks..
 taskkill /F /IM Resources\Pingtest.cmd
 taskkill /F /IM Resources\Traceroute.cmd
+taskkill /F /IM Resources\NetstatR.cmd
+taskkill /F /IM Resources\Ipconfig.cmd
 del /F
 :sdcancel
 echo.
