@@ -11,7 +11,11 @@ exit
 echo.
 echo Welcome to the Batch networking tool.
 echo.
-if not exist SavedResults\ mkdir SavedResults
+if not exist SavedResults\ 
+(
+mkdir SavedResults
+echo SavedResults folder created.
+)
 :start
 :: color "%~1"
 color 2
