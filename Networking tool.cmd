@@ -26,19 +26,20 @@ echo 7) Exit
 echo 8) Uninstall
 set /p input=
 echo.
-if %input%==1 goto testprep
-if %input%==2 goto tracerouteprep
+if %input%==1 call :testprep
+if %input%==2 call :tracerouteprep
 if %input%==3 goto nstprep
-if %input%==4 goto ipcfg
-if %input%==5 goto help
-if %input%==6 goto clearsaves
+if %input%==4 call :ipcfg
+if %input%==5 call :help
+if %input%==6 call :clearsaves
 if %input%==7 exit
 if %input%==8 goto uninstall
+echo.
+goto start
 :: Features ˇˇ
 :tracerouteprep
 start Resources\Traceroute.cmd
 echo Opened route tracer.
-goto start
 :testprep
 start Resources\Pingtest.cmd
 echo Opened connection tester.
@@ -52,42 +53,36 @@ echo 2) Check Ethernet statistics
 echo 3) Check the routing table
 echo 4) Check current connection offload state
 set /p nsinput=
-if %nsinput%==1 goto nst
-if %nsinput%==2 goto nste
-if %nsinput%==3 goto nstrt
-if %nsinput%==4 goto nstt
+if %nsinput%==1 call :nst
+if %nsinput%==2 call :nste
+if %nsinput%==3 call :nstrt
+if %nsinput%==4 call :nstt
+echo.
+goto start
 :nst
 netstat -a
 echo.
 echo Netstat completed.
-goto start
 :nste
 netstat -e
 echo.
 echo Netstat completed.
-goto start
 :nstrt
 start Resources\NetstatR.cmd
 echo.
 echo Opened Netsat-R module.
-goto start
 :nstt
 netstat -t
 echo.
 echo Netstat completed.
-goto start
 :: Netstat ^^
 :ipcfg
 start Resources\Ipconfig.cmd
 echo Opened Ipconfig module.
-echo.
-goto start
 :: Features ^^
 :clearsaves
 echo This will permanently delete ALL saved results.
 del SavedResults\*
-echo.
-goto start
 :uninstall
 color 6
 echo Are you sure you want to uninstall the tool? (type the number)
@@ -111,5 +106,3 @@ goto start
 :help
 start README.md -n12
 echo Opened help file.
-echo.
-goto start
