@@ -56,6 +56,7 @@ echo 1) Check all connections and listening ports
 echo 2) Check Ethernet statistics
 echo 3) Check the routing table
 echo 4) Check current connection offload state
+echo.
 set /p nsinput=
 if %nsinput%==1 call :nst
 if %nsinput%==2 call :nste
@@ -65,28 +66,32 @@ echo.
 goto start
 :nst
 netstat -a
-echo.
 echo Netstat completed.
+goto :eof
 :nste
 netstat -e
 echo.
 echo Netstat completed.
+goto :eof
 :nstrt
 start Resources\NetstatR.cmd
 echo.
 echo Opened Netsat-R module.
+goto :eof
 :nstt
 netstat -t
-echo.
 echo Netstat completed.
+goto :eof
 :: Netstat ^^
 :ipcfg
 start Resources\Ipconfig.cmd
 echo Opened Ipconfig module.
+goto :eof
 :: Features ^^
 :clearsaves
 echo This will permanently delete ALL saved results.
 del SavedResults\*
+goto :eof
 :uninstall
 color 6
 echo Are you sure you want to uninstall the tool? (type the number)
@@ -110,3 +115,4 @@ goto start
 :help
 start README.md -n12
 echo Opened help file.
+goto :eof
