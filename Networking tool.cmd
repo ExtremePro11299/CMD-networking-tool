@@ -4,12 +4,12 @@ if not exist Resources\ (
 echo Could not find the Resources folder.
 echo Without it the program cannot run.
 echo Make sure the folder is named Resources and it is in the same folder as this file.
-echo If you cannot find the Resources folder, reinstall the tool from GitHub.
+echo If you cannot find the Resources folder, reinstall the program from GitHub.
 pause
 exit
 )
 echo.
-echo Welcome to the Batch networking tool.
+echo Welcome to the CMD networking tool.
 echo.
 if not exist SavedResults\ 
 (
@@ -27,7 +27,6 @@ echo 4) Ipconfig
 echo 5) Help (open README)
 echo 6) Clear saved results
 echo 7) Exit
-echo 8) Uninstall
 set /p input=
 echo.
 if %input%==1 call :testprep
@@ -37,18 +36,17 @@ if %input%==4 call :ipcfg
 if %input%==5 call :help
 if %input%==6 call :clearsaves
 if %input%==7 exit
-if %input%==8 goto uninstall
 echo.
 goto start
 :: Features ˇˇ
 :tracerouteprep
 start Resources\Traceroute.cmd
 echo Opened route tracer.
+goto :eof
 :testprep
 start Resources\Pingtest.cmd
 echo Opened connection tester.
-echo.
-goto start
+goto :eof
 :: Netstat ˇˇ
 :nstprep
 echo How would you like to netstat?
@@ -92,26 +90,6 @@ goto :eof
 echo This will permanently delete ALL saved results.
 del SavedResults\*
 goto :eof
-:uninstall
-color 6
-echo Are you sure you want to uninstall the tool? (type the number)
-echo 1) Yes
-echo 2) No
-set /p sinput=
-if %sinput%==1 goto sdfull
-if %sinput%==2 goto sdcancel
-:sdfull
-echo Stopping tasks..
-taskkill /F /IM Resources\Pingtest.cmd
-taskkill /F /IM Resources\Traceroute.cmd
-taskkill /F /IM Resources\NetstatR.cmd
-taskkill /F /IM Resources\Ipconfig.cmd
-del /F
-:sdcancel
-echo.
-echo Uninstall cancelled.
-echo.
-goto start
 :help
 start README.md -n12
 echo Opened help file.
