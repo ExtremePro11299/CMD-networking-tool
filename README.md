@@ -15,7 +15,7 @@ stored in the **SavedResults** folder, which is created on the first run.
 - If you see some weird messages after typing in a number for a feature, it is completely normal. Just type in the number for what you'd like to do.
 - It is recommended to switch on show file extensions.
 - DO NOT RENAME ANY OF THE FILES OR IT WILL NOT WORK.
-- When you save results to a file, the tool creates a random id for it.
+- When you save results to a file, the program creates a random id for it.
   
 ## Errors
 
