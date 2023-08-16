@@ -1,5 +1,6 @@
 ---
 Supported OS: Windows NT or newer
+Required disk space: 28KB
 ---
 
 All of these commands are built-in to windows
