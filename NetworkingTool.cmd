@@ -11,10 +11,10 @@ exit
 echo.
 echo Welcome to the CMD networking tool.
 echo.
-if not exist SavedResults\ 
-(
+if not exist SavedResults\ (
 mkdir SavedResults
 echo SavedResults folder created.
+echo.
 )
 :start
 :: color "%~1"
