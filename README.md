@@ -9,6 +9,9 @@ batch commands into an easily accessible environment.
 It allows you to save the results to a file that will be 
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
+# Updates
+- It now tells you when the SavedResults folder gets creates
+- Fixed multiple features at a single input bug
 
 # Help
 ## Notes
