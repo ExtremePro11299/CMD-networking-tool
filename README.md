@@ -1,8 +1,14 @@
 ---
-Supported OS: Windows NT or newer
 Required disk space: 28KB
 Required RAM space: 50MB
 ---
+Supported operating systems:
+- Windows NT*
+- OS/2 (compatibility not confirmed)
+- ArcaOS (compatibility not confirmed)
+- ReactOS (compatibility not confirmed)
+
+*All windows operating systems from Windows NT 3.1 to Windows 11
 
 All of these commands are built-in to windows
 by default. This tool arranges the networking
