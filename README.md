@@ -10,7 +10,7 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 # Updates
-- It now tells you when the SavedResults folder gets creates
+- It now tells you when the SavedResults folder gets created
 - Fixed multiple features at a single input bug
 
 # Help
