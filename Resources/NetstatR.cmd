@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 title Netstat -r module
 color 2
 :start
