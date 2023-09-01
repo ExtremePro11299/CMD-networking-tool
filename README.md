@@ -10,9 +10,8 @@ Supported operating systems:
 
 *All windows operating systems from Windows NT 3.1 to Windows 11
 
-All of these commands are built-in to windows
-by default. This tool arranges the networking
-batch commands into an easily accessible environment.
+CMD contains built-in commands to troubleshoot networks. 
+This tool arranges the networking commands into an easily accessible environment.
 It allows you to save the results to a file that will be 
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
