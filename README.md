@@ -3,12 +3,10 @@ Required disk space: 28KB
 Required RAM space: 50MB
 ---
 Supported operating systems:
-- Windows NT*
+- Windows 2000 or newer
 - OS/2 (compatibility not confirmed)
 - ArcaOS (compatibility not confirmed)
 - ReactOS (compatibility not confirmed)
-
-*All windows operating systems from Windows NT 3.1 to Windows 11
 
 CMD contains built-in commands to troubleshoot networks. 
 This tool arranges the networking commands into an easily accessible environment.
