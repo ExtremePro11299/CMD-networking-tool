@@ -16,9 +16,9 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 # Updates (newest to oldest)
+- Added cls to some areas in NetworkingTool.cmd
 - Fixed result saving function for Ping
 - Fixed Ipconfig not working
-- Fixed Result saving function for Netstat -R
 
 # Help
 ## Notes
