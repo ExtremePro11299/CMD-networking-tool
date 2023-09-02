@@ -16,10 +16,9 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 # Updates (newest to oldest)
+- Fixed Traceroute
 - Added cls to some areas in NetworkingTool.cmd
 - Fixed result saving function for Ping
-- Fixed Ipconfig not working
-
 # Help
 ## Notes
 - DO NOT run the program as administrator. It won't be able to access the **Resources** folder if you do so.
