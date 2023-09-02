@@ -28,12 +28,13 @@ goto test
 :test
 cd..
 if %savetype%==1 ping %ip% -f -l %mtu%
-if %savetype%==2 ping %ip% -f -l %mtu% >> SavedResults\PingResult-%RANDOM%.txt
+if %savetype%==2 ping %ip% -f -l %mtu% > SavedResults\PingResult-%RANDOM%.txt
 echo What do you want to do? (type the number)
 echo 1) Test again
 echo 2) Change settings
 echo 3) Exit
 set /p input=
+cls
 if %input%==1 goto testprep
 if %input%==2 goto start
 if %input%==3 exit
