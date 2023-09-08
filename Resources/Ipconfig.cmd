@@ -8,7 +8,7 @@ echo Ipconfig results saved.
 echo.
 :endChoice
 echo What do you want to do? (type the number)
-echo 1) Go back to beginning
+echo 1) Ipconfig again
 echo 2) Exit
 set /p input=
 if %input%==1 goto start
