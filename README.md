@@ -14,12 +14,11 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 # Updates (newest to oldest)
+- Added support for running as administrator
 - Fixed Traceroute
 - Added cls to some areas in NetworkingTool.cmd
-- Fixed result saving function for Ping
 # Help
 ## Notes
-- DO NOT run the program as administrator. It won't be able to access the **Resources** folder if you do so.
 - If you see some weird messages after typing in a number for a feature, it is completely normal. Just type in the number for what you'd like to do.
 - It is recommended to switch on show file extensions.
 - DO NOT RENAME ANY OF THE FILES OR IT WILL NOT WORK.
