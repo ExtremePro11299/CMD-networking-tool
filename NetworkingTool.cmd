@@ -1,5 +1,6 @@
 @echo off
 title Networking tool
+cd /d "%~dp0"
 if not exist Resources\ (
 echo Could not find the Resources folder.
 echo Without it the program cannot run.
