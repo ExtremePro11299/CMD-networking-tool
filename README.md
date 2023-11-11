@@ -17,6 +17,8 @@ stored in the **SavedResults** folder, which is created on the first run.
 - Added support for running as administrator
 - Fixed Traceroute
 - Added cls to some areas in NetworkingTool.cmd
+# Bugs
+- Ipconfig only works if it is used directly. (Not via NetworkingTool.cmd)
 # Help
 ## Notes
 - If you see some weird messages after typing in a number for a feature, it is completely normal. Just type in the number for what you'd like to do.
