@@ -14,9 +14,9 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 # Updates (newest to oldest)
+- Fixed result saving for Trace route
 - Fixed result saving for Ping
 - Added support for running as administrator
-- Fixed Traceroute
 # Bugs
 No bugs currently known.
 # Help

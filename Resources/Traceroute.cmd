@@ -12,6 +12,7 @@ set /p ip=
 echo.
 goto test
 :test
+cd /d "%~dp0"
 cd..
 if %savetype%==1 tracert %ip%
 if %savetype%==2 tracert %ip% > SavedResults\TraceResult-%RANDOM%.txt
