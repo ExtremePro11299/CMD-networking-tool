@@ -26,6 +26,7 @@ set /p ip=
 echo.
 goto test
 :test
+cd /d "%~dp0"
 cd..
 if %savetype%==1 ping %ip% -f -l %mtu%
 if %savetype%==2 ping %ip% -f -l %mtu% > SavedResults\PingResult-%RANDOM%.txt
