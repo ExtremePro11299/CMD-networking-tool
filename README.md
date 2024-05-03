@@ -1,12 +1,12 @@
 ---
-Required disk space: 28KB
+Required disk space: 28KB (maybe more for saved results)
 Required RAM space: 50MB
 ---
 Supported operating systems:
-- Windows 2000 or newer
-- OS/2 (compatibility not confirmed)
-- ArcaOS (compatibility not confirmed)
-- ReactOS (compatibility not confirmed)
+- Windows 2000 or newer (tested successfully on Windows 7)
+- OS/2 (not tested)
+- ArcaOS (not tested)
+- ReactOS (not tested)
 
 CMD contains built-in commands to troubleshoot networks. 
 This tool arranges the networking commands into an easily accessible environment.
