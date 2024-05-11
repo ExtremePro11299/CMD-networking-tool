@@ -18,7 +18,7 @@ stored in the **SavedResults** folder, which is created on the first run.
 - Fixed result saving for Ping
 - Added support for running as administrator
 # Bugs
-No bugs currently known.
+Ipconfig not working when opened via NetworkingTool.cmd, only when opened directly.
 # Help
 ## Notes
 - If you see some weird messages after typing in a number for a feature, it is completely normal. Just type in the number for what you'd like to do.
