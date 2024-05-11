@@ -1,14 +1,29 @@
 @echo off
 title Networking tool
 cd /d "%~dp0"
-if not exist Resources\ (
+:: Resources checker ˇˇ
+set resourcesnf=false
+if exist Resources\ (
+goto start
+)
+:: Resources checker ^^
+:: Resources not found screen ˇˇ
+:rnnf
+set resourcesnf=true
+color 0
+echo.
 echo Could not find the Resources folder.
 echo Without it the program cannot run.
 echo Make sure the folder is named Resources and it is in the same folder as this file.
 echo If you cannot find the Resources folder, reinstall the program from GitHub.
-pause
-exit
-)
+echo What do you want to do?
+echo 1) Exit
+echo 2) Open Help (README)
+set /p rntin=
+if %rntin%==1 exit
+if %rntin%==2 call :help
+goto rnnf
+:: Resources not found screen ^^
 echo.
 echo Welcome to the CMD networking tool.
 echo.
