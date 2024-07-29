@@ -14,11 +14,11 @@ It allows you to save the results to a file that will be
 stored in the **SavedResults** folder, which is created on the first run.
 **cmd.exe** does support saving results to files as well.         
 # Updates (newest to oldest)
+- Fixed Ipconfig not working via NetworkingTool.cmd
 - Fixed result saving for Trace route
 - Fixed result saving for Ping
-- Added support for running as administrator
 # Bugs
-Ipconfig not working when opened via NetworkingTool.cmd, only when opened directly.
+Ipconfig now only works via NetworkingTool.cmd. Not when used directly.
 # Help
 ## Notes
 - If you see some weird messages after typing in a number for a feature, it is completely normal. Just type in the number for what you'd like to do.

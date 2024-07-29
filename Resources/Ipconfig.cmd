@@ -1,8 +1,9 @@
 @echo off
 title Ipconfig module
 color 2
+set pathVar=%~1
 :start
-cd.. 
+if (%pathVar%==false) cd..
 ipconfig >> SavedResults\Ipconfig-%RANDOM%.txt
 echo Ipconfig results saved.
 echo.

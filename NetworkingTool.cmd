@@ -103,7 +103,7 @@ echo Netstat completed.
 goto :eof
 :: Netstat ^^
 :ipcfg
-start Resources\Ipconfig.cmd
+start Resources\Ipconfig.cmd true
 cls
 echo Opened Ipconfig module.
 goto :eof
